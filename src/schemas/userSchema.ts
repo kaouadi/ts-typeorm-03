@@ -13,6 +13,7 @@ export const UserEntity = new EntitySchema({
         },
         lastname: {
             type: String
+
         },
         age: {
             type: Number
