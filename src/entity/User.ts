@@ -1,18 +1,50 @@
-import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 
-@Entity()
 export class User {
 
-    @PrimaryGeneratedColumn()
-    id: number;
+    private _id: number;
 
-    @Column()
-    firstName: string;
 
-    @Column()
-    lastName: string;
+    private _firstName: string;
 
-    @Column()
-    age: number;
+    private _lastName: string;
+
+    private _age: number;
+
+
+    public get Id(): number {
+        return this._id;
+    }
+
+    constructor() {
+        this._id = null;
+        this._firstName = null;
+        this._lastName = null;
+        this._age = null;
+        
+    }
+
+    public get firstName(): string {
+        return this._firstName;
+    }
+
+    public get lastName(): string {
+        return this._lastName;
+    }
+
+    public get age(): number {
+        return this._age;
+    }
+
+    public set firstName(value: string){
+        this._firstName = value;
+    }
+
+    public set lastName(value: string){
+        this._lastName = value;
+    }
+
+    public set age(value: number){
+        this._age = value;
+    }
 
 }
