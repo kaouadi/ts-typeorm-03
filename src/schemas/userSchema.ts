@@ -8,10 +8,10 @@ export const UserEntity = new EntitySchema({
             primary: true,
             generated: true
         },
-        firstname: {
+        firstName: {
             type: String
         },
-        lastname: {
+        lastName: {
             type: String
 
         },

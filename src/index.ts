@@ -11,7 +11,10 @@ createConnection().then(async connection => {
     user.lastName = "Saw";
     user.age = 25;
 
-    const userRepository = connection.getRepository<User>(UserEntity)
+    const userRepository = connection.getRepository(UserEntity)
+
+    //console.log(userRepository);
+    /*
     await userRepository.save(user);
     console.log("Saved a new user with id: " + user.id);
 
@@ -20,5 +23,5 @@ createConnection().then(async connection => {
     console.log("Loaded users: ", users);
 
     console.log("Here you can setup and run express/koa/any other framework.");
-
+    */
 }).catch(error => console.log(error));
