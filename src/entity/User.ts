@@ -10,10 +10,6 @@ export class User {
     private _age: number;
 
 
-    public get Id(): number {
-        return this._id;
-    }
-
     constructor() {
         this._id = null;
         this._firstName = null;
