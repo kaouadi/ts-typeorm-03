@@ -4,22 +4,22 @@ import { User2 } from "../entity/User2";
 
 export const UserEntity = new EntitySchema({
     name: "user",
-    target: User2,
+    target: User,
     tableName: "user",
     columns: {
-        id: {
+        _id: {
             type: Number,
             primary: true,
             generated: true
         },
-        firstName: {
+        _firstName: {
             type: String
         },
-        lastName: {
+        _lastName: {
             type: String
 
         },
-        age: {
+        _age: {
             type: Number
         }
     }

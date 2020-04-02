@@ -8,12 +8,12 @@ import {UserEntity} from "./schemas/UserSchema";
 createConnection().then(async connection => {
 
     console.log("Inserting a new user into the database...");
-    const user = new User2();
+    const user = new User();
     user.firstName = "Timber";
     user.lastName = "Saw";
     user.age = 25;
 
-    const userRepository = connection.getRepository(User2);
+    const userRepository = connection.getRepository(User);
    /*
     const userRepository = connection.getRepository<User>('user')
     */

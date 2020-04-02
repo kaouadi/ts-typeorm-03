@@ -8,22 +8,22 @@ export class CreateUser1585240257355 implements MigrationInterface {
             name: "user",
             columns: [
                 {
-                    name: "id",
+                    name: "_id",
                     type: "int",
                     isPrimary: true,
                     isGenerated: true,
                     generationStrategy: 'increment'
                 },
                 {
-                    name: "firstName",
+                    name: "_firstName",
                     type: "varchar",
                 },
                 {
-                    name: "lastName",
+                    name: "_lastName",
                     type: "varchar",
                 },
                 {
-                    name: "age",
+                    name: "_age",
                     type: "int",
                 }
             ]
