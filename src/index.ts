@@ -13,7 +13,7 @@ createConnection().then(async connection => {
     user.age = 25;
 
     /*
-    const userRepository = connection.getRepository<User>(UserEntity)
+    const userRepository = connection.getRepository(User)
     */
  
    const userRepository = connection.getRepository<User>('user')
