@@ -1,18 +1,19 @@
 import "reflect-metadata";
 import {createConnection} from "typeorm";
 import {User} from "./entity/User";
+import {User2} from "./entity/User2";
 /*
 import {UserEntity} from "./schemas/UserSchema";
 */
 createConnection().then(async connection => {
 
     console.log("Inserting a new user into the database...");
-    const user = new User();
+    const user = new User2();
     user.firstName = "Timber";
     user.lastName = "Saw";
     user.age = 25;
 
-    const userRepository = connection.getRepository(User);
+    const userRepository = connection.getRepository(User2);
    /*
     const userRepository = connection.getRepository<User>('user')
     */
