@@ -12,11 +12,10 @@ createConnection().then(async connection => {
     user.lastName = "Saw";
     user.age = 25;
 
-    /*
-    const userRepository = connection.getRepository(User)
+    const userRepository = connection.getRepository(User);
+   /*
+    const userRepository = connection.getRepository<User>('user')
     */
- 
-   const userRepository = connection.getRepository<User>('user')
     await userRepository.save(user);
     console.log("Saved a new user with id: " + user.id);
   
