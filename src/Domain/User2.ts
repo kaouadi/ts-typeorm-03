@@ -1,5 +1,5 @@
 
-export class User {
+export class User2 {
 
     private _id: number;
 

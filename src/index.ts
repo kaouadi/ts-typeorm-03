@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import {createConnection} from "typeorm";
-import {User} from "./entity/User";
-import {User2} from "./entity/User2";
+import {User} from "./Domain/User";
+
 /*
 import {UserEntity} from "./schemas/UserSchema";
 */

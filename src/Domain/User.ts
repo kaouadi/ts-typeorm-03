@@ -1,5 +1,5 @@
 
-export class User2 {
+export class User {
 
     public id: number;
 
@@ -11,10 +11,7 @@ export class User2 {
 
 
     constructor() {
-        this.id = null;
-        this.firstName = null;
-        this.lastName = null;
-        this.age = null;
+
     }
 
 }

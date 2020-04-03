@@ -7,9 +7,10 @@
    "database": "test",
    "synchronize": false,
    "logging": false,
-   "entities": [
-      "src/schemas/**/*.ts"
+   "entitySchemas": [
+   "src/schemas/**/*.ts"
    ],
+   "entities": [],
    "migrations": [
       "src/migration/**/*.ts"
    ],
