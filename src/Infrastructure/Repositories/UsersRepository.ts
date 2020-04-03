@@ -1,5 +1,5 @@
-import { BaseRepository } from "../../Utils/Repositories/BaseRepository";
-import {User} from "../../Domain/User"
+import { BaseRepository } from "../../utils/repositories/BaseRepository";
+import {User} from "../../domain/User"
 
 export class UsersRepository extends BaseRepository {
 

@@ -9,9 +9,4 @@ export class User {
 
     public age: number;
 
-
-    constructor() {
-
-    }
-
 }

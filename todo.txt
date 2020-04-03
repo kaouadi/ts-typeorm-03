@@ -1,3 +1,4 @@
 npm install
 npx ts-node ./node_modules/.bin/typeorm migration:run 
+npx ts-node ./node_modules/.bin/typeorm schema:drop
 npm start
